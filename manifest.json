@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "GPT-4 Cap Watcher",
+  "version": "0.11.11",
+  "description": "Keep an eye on your GPT-4 message cap! Stay informed on remaining messages and time left within your limit.",
+  "permissions": ["storage", "tabs", "activeTab", "webNavigation"],
+  "host_permissions": ["https://chat.openai.com/chat/*"],
+  "action": {
+    "default_popup": "",
+    "default_icon": {
+      "16": "images/icons8-chatgpt-16.png",
+      "24": "images/icons8-chatgpt-24.png",
+      "32": "images/icons8-chatgpt-32.png",
+      "48": "images/icons8-chatgpt-48.png",
+      "64": "images/icons8-chatgpt-64.png",
+      "96": "images/icons8-chatgpt-96.png",
+      "128": "images/icons8-chatgpt-128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/chat/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "images/icons8-chatgpt-16.png",
+    "24": "images/icons8-chatgpt-24.png",
+    "32": "images/icons8-chatgpt-32.png",
+    "48": "images/icons8-chatgpt-48.png",
+    "64": "images/icons8-chatgpt-64.png",
+    "96": "images/icons8-chatgpt-96.png",
+    "128": "images/icons8-chatgpt-128.png"
+  }
+}
