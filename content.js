@@ -1,7 +1,7 @@
 ;(function () {
   const GPT_4_PRE_SELECTOR = 'main > div > div > div > div > div'
   const GPT_4_SELECTOR = 'GPT-4'
-  const MAIN_SELECTOR = 'main'
+  const MAIN_SELECTOR = 'body'
   const FORM_SELECTOR = 'main > div.absolute.bottom-0 > form'
   const REGENERATE_BUTTON_SELECTOR = '.btn-neutral'
   const SEND_BUTTON_SELECTOR = '.absolute.p-1'

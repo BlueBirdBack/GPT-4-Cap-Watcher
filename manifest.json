@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "GPT-4 Cap Watcher",
-  "version": "0.11.11",
+  "version": "0.11.13",
   "description": "Keep an eye on your GPT-4 message cap! Stay informed on remaining messages and time left within your limit.",
   "permissions": ["storage", "tabs", "activeTab", "webNavigation"],
   "host_permissions": ["https://chat.openai.com/chat/*"],
@@ -18,7 +18,8 @@
     }
   },
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "type": "module"
   },
   "content_scripts": [
     {
